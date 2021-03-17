@@ -10,3 +10,13 @@ bird_a = Bird.create(name: "Black-Capped Chickadee", species: "Poecile Atricapil
 bird_b = Bird.create(name: "Grackle", species: "Quiscalus Quiscula")
 bird_c = Bird.create(name: "Common Starling", species: "Sturnus Vulgaris")
 bird_d = Bird.create(name: "Mourning Dove", species: "Zenaida Macroura")
+
+location_a = Location.create(latitude: "40.730610", longitude: "-73.935242")
+location_b = Location.create(latitude: "30.26715", longitude: "-97.74306")
+location_c = Location.create(latitude: "45.512794", longitude: "-122.679565")
+
+signting_a = Signting.create(bird: bird_a, location: location_b)
+signting_b = Signting.create(bird: bird_b, location: location_a)
+signting_c = Signting.create(bird: bird_c, location: location_a)
+signting_d = Signting.create(bird: bird_d, location: location_c)
+signting_e = Signting.create(bird: bird_a, location: location_b) 
